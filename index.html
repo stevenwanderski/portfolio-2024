@@ -5,14 +5,63 @@
   <title>Steven Wanderski - Senior Software Engineer</title>
 </head>
 <body>
+  <img src="img/profile-pic.png" alt="" width="100">
   <h1>Steven Wanderski</h1>
+  <h2>Senior Software Engineer</h2>
+  <p>I am a life-long programmer with over fifteen years of experience building small to large web applications for clients and teams all over the world 👋</p>
+
+  <h3>Work.</h3>
+
+  <h4>4aGoodCause (2015 - Present)</h4>
+  <ul>
+    <li>Link: <a href="https://4agoodcause.com">https://4agoodcause.com</a></li>
+    <li>Wrote the Ruby on Rails application from scratch in 2015 and migrated all existing data from the previous ASP application</li>
+    <li>Have been the sole maintainer since 2015 while the app remains stable and relatively bug-free</li>
+    <li>Platform generates over $20M in donations each year</li>
+    <li>Major payment processors have been implemented, including Stripe, Authorize.net, and PayPal</li>
+    <li>Platform includes a robust nonprofit user CRM system that includes such functionality as annual reports, donor management, CSV / Excel downloads, and billing features</li>
+    <li>Platform heavily utilizes background workers to offload resource-intensive tasks and cron processes</li>
+    <li>Platform includes a comprehensive test suite that includes end-to-end, integration and unit tests</li>
+  </ul>
+
+  <h4>Popular Pays (2013-2019)</h4>
+  <ul>
+    <li>Link: <a href="https://popularpays.com/">https://popularpays.com/</a></li>
+    <li>Was the first full-time employee and wrote the original Rails admin application from scratch</li>
+    <li>Graduated from Y Combinator as a co-founder in the W2015 batch</li>
+    <li>Helped grow the company from two to 40 teammates</li>
+    <li>Implemented multiple front-ends (Ember.js) that communicated with a large-scale JSON API</li>
+    <li>Company was successfully acquired by Lightricks, Inc in 2022</li>
+  </ul>
+
+  <h4>SliderUI</h4>
+  <ul>
+    <li>Link: <a href="https://sliderui.com">https://sliderui.com</a></li>
+    <li>SaaS that provides a hosted solution for building and maintaining image sliders</li>
+    <li>Built from scratch using Ruby on Rails / Hotwire and uses bxSlider to funnel new users to the app</li>
+    <li>Implements Stripe payment processing</li>
+  </ul>
+
+  <h3>Learning.</h3>
+  <ul>
+    <li>Emulators. CHIP-8, NES, [Link to Go Emulator]</li>
+    <li>Testing SOLID principles in a real-world, large app</li>
+    <li>Testing BDD vs TDD in a real-world, large app</li>
+    <li>Data Structures and Algos</li>
+    <li>Strict-type languages (Go, Rust)</li>
+  </ul>
+
+  <h3>Contact.</h3>
 
   <form name="contact" netlify>
     <p>
-      <label>Name <input type="text" name="name" /></label>
+      <label>Name <input type="text" name="name" required /></label>
     </p>
     <p>
-      <label>Email <input type="email" name="email" /></label>
+      <label>Email <input type="email" name="email" required /></label>
+    </p>
+    <p>
+      <label>Body <textarea name="body" required></textarea></label>
     </p>
     <p>
       <button type="submit">Send</button>
