@@ -1,71 +1,189 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steven Wanderski - Senior Software Engineer</title>
+  <link rel="stylesheet" href="/output.css">
 </head>
-<body>
-  <img src="img/profile-pic.png" alt="" width="100">
-  <h1>Steven Wanderski</h1>
-  <h2>Senior Software Engineer</h2>
-  <p>I am a life-long programmer with over fifteen years of experience building small to large web applications for clients and teams all over the world 👋</p>
 
-  <h3>Work.</h3>
+<body class="pb-20">
+  <div class="max-w-7xl mx-auto">
 
-  <h4>4aGoodCause (2015 - Present)</h4>
-  <ul>
-    <li>Link: <a href="https://4agoodcause.com">https://4agoodcause.com</a></li>
-    <li>Wrote the Ruby on Rails application from scratch in 2015 and migrated all existing data from the previous ASP application</li>
-    <li>Have been the sole maintainer since 2015 while the app remains stable and relatively bug-free</li>
-    <li>Platform generates over $20M in donations each year</li>
-    <li>Major payment processors have been implemented, including Stripe, Authorize.net, and PayPal</li>
-    <li>Platform includes a robust nonprofit user CRM system that includes such functionality as annual reports, donor management, CSV / Excel downloads, and billing features</li>
-    <li>Platform heavily utilizes background workers to offload resource-intensive tasks and cron processes</li>
-    <li>Platform includes a comprehensive test suite that includes end-to-end, integration and unit tests</li>
-  </ul>
+    <div class="px-6 py-24 sm:py-32 lg:px-8">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-6">
+          <div>
+            <img class="rounded-full w-36" src="img/profile-pic.png">
+          </div>
 
-  <h4>Popular Pays (2013-2019)</h4>
-  <ul>
-    <li>Link: <a href="https://popularpays.com/">https://popularpays.com/</a></li>
-    <li>Was the first full-time employee and wrote the original Rails admin application from scratch</li>
-    <li>Graduated from Y Combinator as a co-founder in the W2015 batch</li>
-    <li>Helped grow the company from two to 40 teammates</li>
-    <li>Implemented multiple front-ends (Ember.js) that communicated with a large-scale JSON API</li>
-    <li>Company was successfully acquired by Lightricks, Inc in 2022</li>
-  </ul>
+          <div>
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Steven Wanderski
+            </h1>
+          </div>
+        </div>
 
-  <h4>SliderUI</h4>
-  <ul>
-    <li>Link: <a href="https://sliderui.com">https://sliderui.com</a></li>
-    <li>SaaS that provides a hosted solution for building and maintaining image sliders</li>
-    <li>Built from scratch using Ruby on Rails / Hotwire and uses bxSlider to funnel new users to the app</li>
-    <li>Implements Stripe payment processing</li>
-  </ul>
+        <p class="mt-6 text-xl leading-8 text-gray-600 max-w-2xl">
+          Hi! 👋 I am a life-long software engineer that has successfully exited a start-up and helped raise over $150M
+          for charities across the globe.
+        </p>
 
-  <h3>Learning.</h3>
-  <ul>
-    <li>Emulators. CHIP-8, NES, [Link to Go Emulator]</li>
-    <li>Testing SOLID principles in a real-world, large app</li>
-    <li>Testing BDD vs TDD in a real-world, large app</li>
-    <li>Data Structures and Algos</li>
-    <li>Strict-type languages (Go, Rust)</li>
-  </ul>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a href="#" class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            Download Resume <span aria-hidden="true">→</span>
+          </a>
 
-  <h3>Contact.</h3>
+          <button onclick="contact_modal.showModal()" class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            Contact <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
-  <form name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" required /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" required /></label>
-    </p>
-    <p>
-      <label>Body <textarea name="body" required></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+    <hr class="mb-20">
+
+    <div class="px-6 lg:px-8">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 mb-8">Work Experience.</h3>
+
+      <ol class="max-w-prose">
+        <li class="mb-12">
+          <div class="group relative gridx pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+            <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+              aria-label="2024 to Present">
+              2015 — Present
+            </header>
+            <div class="z-10 sm:col-span-6">
+              <h3 class="font-medium leading-snug text-slate-900">
+                <div>
+                  <span>Lead Engineer · 4aGoodCause</span>
+                </div>
+              </h3>
+              <p class="mt-2 text-sm leading-normal">
+                <ul class="list-disc space-y-2 ml-10 text-gray-500">
+                  <li>Link: <a href="https://4agoodcause.com">https://4agoodcause.com</a></li>
+                  <li>Wrote the Ruby on Rails application from scratch in 2015 and migrated all existing data from the previous
+                    ASP application</li>
+                  <li>Have been the sole maintainer since 2015 while the app remains stable and relatively bug-free</li>
+                  <li>Platform generates over $20M in donations each year</li>
+                  <li>Major payment processors have been implemented, including Stripe, Authorize.net, and PayPal</li>
+                  <li>Platform includes a robust nonprofit user CRM system that includes such functionality as annual reports,
+                    donor management, CSV / Excel downloads, and billing features</li>
+                  <li>Platform heavily utilizes background workers to offload resource-intensive tasks and cron processes</li>
+                  <li>Platform includes a comprehensive test suite that includes end-to-end, integration and unit tests</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mb-12">
+          <div class="group relative gridx pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+            <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+              aria-label="2024 to Present">
+              2013 — 2019
+            </header>
+            <div class="z-10 sm:col-span-6">
+              <h3 class="font-medium leading-snug text-slate-900">
+                <div>
+                  <span>Senior Engineer · Popular Pays</span>
+                </div>
+              </h3>
+              <p class="mt-2 text-sm leading-normal">
+                <ul class="list-disc space-y-2 ml-10 text-gray-500">
+                  <li>Link: <a href="https://popularpays.com/">https://popularpays.com/</a></li>
+                  <li>Was the first full-time employee and wrote the original Rails admin application from scratch</li>
+                  <li>Graduated from Y Combinator as a co-founder in the W2015 batch</li>
+                  <li>Helped grow the company from two to 40 teammates</li>
+                  <li>Implemented multiple front-ends (Ember.js) that communicated with a large-scale JSON API</li>
+                  <li>Company was successfully acquired by Lightricks, Inc in 2022</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mb-12">
+          <div class="group relative gridx pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+            <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+              aria-label="2024 to Present">
+              2023 — Present
+            </header>
+            <div class="z-10 sm:col-span-6">
+              <h3 class="font-medium leading-snug text-slate-900">
+                <div>
+                  <span>Founder · SliderUI</span>
+                </div>
+              </h3>
+              <p class="mt-2 text-sm leading-normal">
+                <ul class="list-disc space-y-2 ml-10 text-gray-500">
+                  <li>Link: <a href="https://sliderui.com">https://sliderui.com</a></li>
+                  <li>SaaS that provides a hosted solution for building and maintaining image sliders</li>
+                  <li>Built from scratch using Ruby on Rails / Hotwire and uses bxSlider to funnel new users to the app</li>
+                  <li>Implements Stripe payment processing</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <hr class="mb-20">
+
+    <div class="px-6 lg:px-8">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 mb-8">Learning.</h3>
+
+      <p class="mt-2 text-sm leading-normal">
+        <ul class="list-disc space-y-2 ml-10 text-gray-500">
+          <li>Emulators. CHIP-8, NES, [Link to Go Emulator]</li>
+          <li>Testing SOLID principles in a real-world, large app</li>
+          <li>Testing BDD vs TDD in a real-world, large app</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Strict-type languages (Go, Typescript, Rust)</li>
+        </ul>
+      </p>
+    </div>
+
+    <dialog id="contact_modal" class="modal">
+      <div class="modal-box">
+        <div class="font-bold text-3xl mb-8">
+          Contact.
+        </div>
+
+        <form class="space-y-6" name="contact" netlify>
+          <div>
+            <label for="email" class="tw-label">Email</label>
+            <div class="mt-2">
+              <input id="email" name="email" type="email" autocomplete="email" required class="tw-input">
+            </div>
+          </div>
+
+          <div>
+            <label for="name" class="tw-label">Name</label>
+            <div class="mt-2">
+              <input id="name" name="name" type="text" required class="tw-input">
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="tw-label">Message</label>
+            <div class="mt-2">
+              <textarea id="message" name="message" required class="tw-input"></textarea>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="tw-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+  </div>
 </body>
+
 </html>
