@@ -1317,11 +1317,6 @@ html {
   padding-bottom: 6rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1554,11 +1549,6 @@ body {
 
   .sm\:gap-8 {
     gap: 2rem;
-  }
-
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 
   .sm\:py-20 {
